@@ -1,0 +1,42 @@
+// .vscode/launch.json
+{
+	"version": "0.2.0",
+	"configurations": [
+		// Unit Tests
+		{
+			"name": "Flutter Unit Tests",
+			"request": "launch",
+			"type": "dart",
+			"program": "test/unit/counter_test.dart",
+			"args": [
+				"-r",
+				"compact"
+			],
+			"cwd": "${workspaceFolder}"
+		},
+		// Widget Tests
+		{
+			"name": "Flutter Widget Tests",
+			"request": "launch",
+			"type": "dart",
+			"program": "test/widget/counter_widget_test.dart",
+			"args": [
+				"-r",
+				"compact"
+			],
+			"cwd": "${workspaceFolder}"
+		},
+		// Integration Tests
+		{
+			"name": "Flutter Integration Tests",
+			"request": "launch",
+			"type": "dart",
+			"program": "test_driver/main_app.dart",
+			"args": [
+				"-d",
+				"flutter-tester"
+			],
+			"cwd": "${workspaceFolder}"
+		}
+	]
+}
