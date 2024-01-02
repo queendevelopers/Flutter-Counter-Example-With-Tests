@@ -8,8 +8,7 @@ void main() {
     await tester.pumpWidget(const CounterApp());
 
     // Verify that the initial counter value is 0.
-    expect(find.text('You have pushed the button this many times:'),
-        findsOneWidget);
+    expect(find.text('You have pushed the button this many times:'), findsOneWidget);
     expect(find.text('0'), findsOneWidget);
 
     // Tap the '+' icon and trigger a frame.
@@ -29,7 +28,6 @@ void main() {
 
   testWidgets('Matches golden file', (tester) async {
     await tester.pumpWidget(const CounterApp());
-    await expectLater(
-        find.byType(CounterApp), matchesGoldenFile('goldens/counter_app.png'));
-  });
+    await expectLater(find.byType(CounterApp), matchesGoldenFile('goldens/counter_app.png'));
+  }, tags: 'no-ci');
 }

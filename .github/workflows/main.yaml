@@ -1,0 +1,12 @@
+name: counter_app_test
+on: pull_request
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: subosito/flutter-actions@v2.12.0
+      - name: install dependencies
+        run: flutter packages get
+      - name: run tests
+        run: flutter test --exclude-tags='no-ci'
