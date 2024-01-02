@@ -1,0 +1,21 @@
+{
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/.pub-cache": true,
+        "**/.gradle": true
+    },
+    "editor.formatOnSave": true,
+    "dart.lineLength": 120,
+    "search.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "**/.pub-cache": true,
+        "**/.gradle": true,
+    },
+    "editor.stickyScroll.enabled": true,
+}
