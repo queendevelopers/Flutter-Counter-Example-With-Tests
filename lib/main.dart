@@ -1,9 +1,7 @@
 import 'package:counter/counter.dart';
 import 'package:flutter/material.dart';
 
-void main() async {
-  runApp(const CounterApp());
-}
+void main() async => runApp(const CounterApp()); // coverage:ignore-line
 
 class CounterApp extends StatelessWidget {
   const CounterApp({super.key});
