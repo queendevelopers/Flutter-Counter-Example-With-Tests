@@ -54,6 +54,6 @@ The Counter App is a simple Flutter application that allows users to increment a
   driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
   ```
 ![code magic screenshot](screenshots/github_pipeline.png)
-![code magic screenshot](screenshots/code_magic.png)
+![code magic screenshot](screenshots/codemagic.png)
 
 
