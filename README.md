@@ -1,16 +1,38 @@
-# counter
+# Overview
 
-A new Flutter project.
+The Counter App is a simple Flutter application that allows users to increment and decrement a counter value. It serves as a basic example for understanding Flutter app development and state management.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Increment and decrement buttons for modifying the counter value.
+- Display of the current counter value.
 
-A few resources to get you started if this is your first Flutter project:
+## Installation
+1. Clone the repository:
+   git clone https://github.com/queendevelopers/flutter-counter-example-with-test.git
+2. Navigate to the project directory: 
+   cd counter
+3. Install dependencies
+   flutter pub get
+4. Run the app flutter run
+   flutter run
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+# Project files
+- main.dart -> counter application
+- counter.dart -> increment and decrement method
+- .vscode/launch.json -> vscode launch configuration for application, unit test, widget test and integration test.
+- test/unit/counter_test -> unit test.
+- test/wiget/counter_widget_test -> widget & golden test
+- test_driver -> integration test and screenshot extension method.
+- .github -> configuration for codemagic.
+- coverage -> generated codecoverage from lcov.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Code coverage
+- We have 100% code coverage for counter application (also demonstrates ignore file for main function). You can open code coverage page by using command on root for the project :
+  open coverage/html/index.html
+
+## Codemagic 
+- Codemagic setup is required to work the github continuos integration and deployement.
+- If you manage to setup on your personal repo then check Run only test and Android. (iOS build won't work util you add certificates)
+- Also, for flutter integration test arguments, you need to replace with following command:
+  driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
