@@ -2,6 +2,18 @@
 {
 	"version": "0.2.0",
 	"configurations": [
+		// Run App
+		{
+			"name": "Counter Application",
+			"request": "launch",
+			"type": "dart",
+			"program": "lib/main.dart",
+			"args": [
+				"-r",
+				"compact"
+			],
+			"cwd": "${workspaceFolder}"
+		},
 		// Unit Tests
 		{
 			"name": "Flutter Unit Tests",

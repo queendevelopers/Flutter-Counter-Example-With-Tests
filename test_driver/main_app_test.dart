@@ -49,7 +49,7 @@ void main() {
 
 extension on FlutterDriver {
   Future<void> takeScreenshot(String name) async {
-    final filePath = File('screenshots/$name.png');
+    final filePath = File('screenshots/generated/$name.png');
     if (await filePath.exists()) {
       await filePath.delete(recursive: true);
     }
