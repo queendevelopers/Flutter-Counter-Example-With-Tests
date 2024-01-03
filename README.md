@@ -12,18 +12,27 @@ The Counter App is a simple Flutter application that allows users to increment a
    ```
    git clone https://github.com/queendevelopers/flutter-counter-example-with-test.git
    ```
-5. Navigate to the project directory: 
+2. Navigate to the project directory: 
    ```
    cd counter
    ```
-7. Install dependencies
+3. Install dependencies
    ```
    flutter pub get
    ```
-9. Run the app flutter run
+4. Run the app flutter run
    ```
    flutter run
    ```
+5. Run test
+   ```
+   flutter test
+   ```
+6. Run Integration test
+   ```
+   flutter driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
+   ```
+
 
 ## Project files
 - **main.dart:** counter application
