@@ -35,16 +35,25 @@ The Counter App is a simple Flutter application that allows users to increment a
 - **.github:** configuration for codemagic.
 - **coverage:** generated codecoverage from lcov.
 
+![Unit and widget test screenshot](screenshots/unit_and_widget_test.png)
+![Integration test](screenshots/integration_test.png)
+
+
 ## Code coverage
 - We have 100% code coverage for counter application (also demonstrates ignore file for main function). You can open code coverage page by using command on root for the project :
   ```
   open coverage/html/index.html
   ```
+![code coverage screenshot](screenshots/code_coverage.png)
 
 ## Codemagic 
-- Codemagic setup is required to work the github continuos integration and deployement.
+- Codemagic setup is required to work the github continuos integration and deployment.
 - If you manage to setup on your personal repo then check Run only test and Android. (iOS build won't work util you add certificates)
 - Also, for flutter integration test arguments, you need to replace with following command:
   ```
   driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
   ```
+![code magic screenshot](screenshots/github_pipeline.png)
+![code magic screenshot](screenshots/code_magic.png)
+
+
