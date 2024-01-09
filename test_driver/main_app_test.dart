@@ -49,7 +49,8 @@ void main() {
 
 extension on FlutterDriver {
   Future<void> takeScreenshot(String name) async {
-    final filePath = File('screenshots/generated/$name.png');
+    String platform = Platform.environment['TARGET_PLATFORM'] ?? 'unknown';
+    final filePath = File('screenshots/generated/$platform/$name.png');
     if (await filePath.exists()) {
       await filePath.delete(recursive: true);
     }

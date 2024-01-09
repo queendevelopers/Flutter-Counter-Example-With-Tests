@@ -32,7 +32,13 @@ The Counter App is a simple Flutter application that allows users to increment a
    ```
    flutter driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
    ```
-
+7. Generate screenshot in target devices
+   ```
+   TARGET_PLATFORM=ios flutter driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart
+   ```
+   ```
+   TARGET_PLATFORM=chrome flutter driver --target=test_driver/main_app.dart --driver=test_driver/main_app_test.dart -d chrome # Make sure to run webdriver first.
+   ```
 
 ## Project files
 - **main.dart:** counter application
